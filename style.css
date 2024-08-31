@@ -1,0 +1,262 @@
+/* Reseta margens  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral do site */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1b1b1b;
+    color: #e6e6e6;
+    margin: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Navegação */
+nav {
+    background: #242424;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+    color: #00d1ff;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff0080;
+}
+
+/* Cabeçalho das páginas */
+header {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+header h1 {
+    color: #00d1ff;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px rgba(0, 209, 255, 0.7);
+}
+
+/* Estilo para as seções */
+section {
+    background: #2e2e2e;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    margin-bottom: 30px;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+section:hover {
+    background: #343434;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+/* Titulos das seções */
+section h2 {
+    color: #ff0080;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-shadow: 0 0 8px rgba(255, 0, 128, 0.7);
+}
+
+/* Links */
+section a {
+    color: #00d1ff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+section a:hover {
+    color: #ff0080;
+}
+
+/* Formatação do texto com imagens */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+img.left {
+    float: left;
+    margin-right: 20px;
+}
+
+img.right {
+    float: right;
+    margin-left: 20px;
+}
+
+/* Flutuar imagens */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* formulário de contato */
+form {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: #424040;
+    border-radius: 8px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #1f1f1f;
+    color: #e6e6e6;
+    font-size: 1rem;
+    transition: background 0.3s, border-color 0.3s;
+}
+
+form input:focus, form textarea:focus {
+    background: #2e2e2e;
+    border-color: #00d1ff;
+    outline: none;
+}
+
+form button {
+    background: #00d1ff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #0099cc;
+}
+
+/* Foto minha foto */
+.photo-small {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.photo-small img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #00d1ff;
+}
+
+/* Foto grande da cidade igual banner */
+.photo-banner {
+    margin: 30px 0;
+}
+
+.photo-banner img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo para a seção de cursos */
+.cursos-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.curso-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+}
+
+.content h2 {
+    margin-top: 0;
+}
+
+.content a {
+    color: #00d1ff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.content a:hover {
+    color: #ff0080;
+}
+
+/* Estilo dos ícones sociais no rodapé */
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #e6e6e6;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #00d1ff;
+}
+
+/* Rodapé */
+footer {
+    background: #242424;
+    color: #e6e6e6;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    border-top: 2px solid #00d1ff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
